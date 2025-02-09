@@ -1,0 +1,37 @@
+{
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "description": "Core da aplicação Gourmetech",
+  "main": "index.js",
+  "engines": {
+    "node": "16.16.0",
+    "npm": "8.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set NODE_OPTIONS=--expose-gc && nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gourmetex/gourmetech-core.git"
+  },
+  "author": "Gourmetex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gourmetex/gourmetech-core/issues"
+  },
+  "homepage": "https://github.com/gourmetex/gourmetech-core#readme",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "body-parser": "^1.17.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "node-cache": "^5.1.2",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.20",
+    "qrcode": "^1.5.4",
+    "whatsapp-web.js": "^1.26.0"
+  }
+}
