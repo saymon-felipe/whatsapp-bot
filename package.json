@@ -1,5 +1,5 @@
 {
-  "name": "whatsapp-bot",
+  "name": "whatsapp-bot-core",
   "version": "1.0.0",
   "description": "Core da aplicação Gourmetech",
   "main": "index.js",
