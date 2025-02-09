@@ -1,7 +1,7 @@
 {
   "name": "whatsapp-bot-core",
   "version": "1.0.0",
-  "description": "Core da aplicação Gourmetech",
+  "description": "Core da aplicação whatsapp-bot",
   "main": "index.js",
   "engines": {
     "node": "16.16.0",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gourmetex/gourmetech-core.git"
+    "url": "git+https://github.com/saymon-felipe/whatsapp-bot.git"
   },
-  "author": "Gourmetex",
+  "author": "Saymon Felipe",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gourmetex/gourmetech-core/issues"
+    "url": "https://github.com/saymon-felipe/whatsapp-bot/issues"
   },
-  "homepage": "https://github.com/gourmetex/gourmetech-core#readme",
+  "homepage": "https://github.com/saymon-felipe/whatsapp-bot#readme",
   "dependencies": {
     "axios": "^1.7.2",
     "body-parser": "^1.17.0",
