@@ -9,7 +9,7 @@ const user_email = "linnubr@gmail.com";
 
 let puppeteerPath = "/app/node_modules/puppeteer-core/.local-chromium/linux-1045629/chrome-linux/chrome"; // Produção
 
-if (process.env.URL_API.indexOf("https://") == -1) { // Está no ambiente de desenvolvimento
+if (process.env.URL_API.indexOf("https://") != -1) { // Está no ambiente de desenvolvimento
     puppeteerPath = process.cwd() + "/node_modules/puppeteer-core/.local-chromium/win64-1045629/chrome-win/chrome.exe";
 }
 
