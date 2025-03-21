@@ -10,6 +10,12 @@ const user_email = "linnubr@gmail.com";
 let client;
 let sended_qrCode_email = false;
 
+let puppeteerPath = '/snap/bin/chromium'; // Produção
+
+if (process.env.URL_API.indexOf("https://") != -1) { // Está no ambiente de desenvolvimento
+    puppeteerPath = process.cwd() + "/node_modules/puppeteer-core/.local-chromium/win64-1045629/chrome-win/chrome.exe";
+}
+
 const processarQRCode = async (qr) => {
     try {
         if (!sended_qrCode_email) {
@@ -84,6 +90,7 @@ async function startClient() {
         }
 
         client = new Client({
+            executablePath: puppeteerPath,
             authStrategy: new LocalAuth(),
             puppeteer: {
                 args: [
