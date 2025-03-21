@@ -138,7 +138,7 @@ async function startClient() {
     }
 }
 
-process.on("SIGTERM", async () => {
+/*process.on("SIGTERM", async () => { //Comentando para subir no google cloud
     console.log("🛑 Recebido SIGTERM. Encerrando processos...");
 
     if (client) {
@@ -167,7 +167,7 @@ process.on("SIGTERM", async () => {
 
     console.log("🚪 Finalizando aplicação...");
     process.exit(0);
-});
+});*/
 
 let whatsappSender = {
     init: () => startClient(),
